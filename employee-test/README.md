@@ -64,6 +64,13 @@ El salario anual se calcula como:
 employee_anual_salary = employee_salary * 12
 ```
 
+### 3. Ejecutar UnitTest
+Ejecutar manuelmente test unitarios
+```sh
+gradle test
+```
+
+
 ## Autor
 Juan Rojas
 
