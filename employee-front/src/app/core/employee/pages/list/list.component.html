@@ -1,0 +1,59 @@
+
+
+@if(this.alert.type){
+	<div class="container mt-3">
+		<ngb-alert [type]="alert.type" (closed)="this.close">{{ alert.message }}</ngb-alert>
+	</div>
+}
+
+<div class="container">
+	<h1>Empleados list</h1>
+</div>
+<div class="container">
+	<h5>Search by ID</h5>
+	<div class="d-flex container mb-3">
+		<input id="typeahead-basic" type="number" class="form-control" (keyup)="this.searchEmpty()" [(ngModel)]="employeeId"/>
+		<button
+			type="button"
+			class="btn btn-outline-secondary me-2"
+			placement="end"
+			ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+			popoverTitle="Popover on right"
+			[disabled]="!this.employeeId"
+			(click)="this.search()">
+		Search
+		</button>
+	</div>
+</div>
+
+<div class="container">
+	@if (employees) {
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Employee name</th>
+					<th scope="col">Employee age</th>
+					<th scope="col">Salary</th>
+					<th scope="col">Annual Salary</th>
+				</tr>
+			</thead>
+			<tbody>
+				@for (employee of employees; track employee.employee_name) {
+					<tr>
+						<th scope="row">{{ employee.id }}</th>
+						<td>
+							{{ employee.employee_name }}
+						</td>
+						<td>
+							{{ employee.employee_age }}
+						</td>
+						<td>{{ employee.employee_salary | currency }}</td>
+						<td>{{ employee.annualSalary | currency }}</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	}
+</div>

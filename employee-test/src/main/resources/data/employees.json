@@ -1,0 +1,43 @@
+[
+  {
+    "first_name": "Juan",
+    "last_name": "Rojas",
+    "salary": 5000000.0
+  },
+  {
+    "first_name": "July",
+    "last_name": "Rodriguez",
+    "salary": 4000000.0
+  },
+  {
+    "first_name": "Francisco",
+    "last_name": "Rodriguez",
+    "salary": 2000000.0
+  },
+  {
+    "first_name": "Sandra",
+    "last_name": "Angarita",
+    "salary": 3000000.0
+  },
+  {
+    "first_name": "Cesar",
+    "last_name": "Garcia",
+    "salary": 10000000.0
+  },
+  {
+    "first_name": "Stella",
+    "last_name": "Cartagena",
+    "salary": 6000000.0
+  },
+  {
+    "first_name": "Manuel",
+    "last_name": "Cartagena",
+    "salary": 2500000.0
+
+  },
+  {
+    "first_name": "Luz",
+    "last_name": "Garcia",
+    "salary": 1600000.0
+  }
+]
