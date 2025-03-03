@@ -19,7 +19,7 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado:
 ## Instalación y configuración
 ### 1. Clonar el repositorio
 ```sh
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/Juan-rojas75/challenge-employee.git
 cd employee-test
 ```
 
